@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: grid;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: azure;
+    grid-template-columns: 3fr 2fr 1.5fr;
+    grid-template-rows: 112px 80% 50px;
+    grid-template-areas: 
+        "header header header"
+        "main main sidebar"
+        "footer footer footer";
+}
+
+header {
+    background-color: teal;
+    color:antiquewhite;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1, a {
+    margin-left: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: azure;
+    padding: 15px 5px;
+}
+
+header a:hover {
+    background-color: #333;
+    color:aquamarine;
+    border-radius: 5px;
+}
+
+section {
+    margin: 30px ;
+    grid-area: main;
+    text-align: justify;
+}
+
+aside {
+    grid-area: sidebar;
+    margin-top: 70px ;
+    margin-left: 20px;
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul li a {
+    text-decoration: none;   
+}
+
+ul li {
+    margin-left: -20px;
+    flex-wrap: wrap; 
+}
+
+footer {
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-area: footer;
+    padding: 20px;
+    background-color: rgba(2, 2, 2, 0.932);
+    color: aliceblue;
+    align-self:flex-end;
+}
+
+center {
+    margin: auto;
+}
+
+
